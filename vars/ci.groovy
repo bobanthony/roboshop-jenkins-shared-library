@@ -13,6 +13,11 @@ def call() {
                    common.testcases()
                 }
             }
+            stage ('code quality') {
+                steps {
+                    common.codequality()
+                }
+            }
         }
     }
 
